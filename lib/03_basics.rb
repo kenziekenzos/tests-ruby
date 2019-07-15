@@ -23,9 +23,10 @@ def reverse_upcase_noLTA (bla)
 
 end 
 
-def array_42 (o)
-    o.include? (42)
-end
+def array_42(array)
+    return array.include?(42)
+end 
 
-def magic_array
-end
+def magic_array(array)
+    return array.flatten.sort.map{|x| x*2}.reject{|x| x % 3 == 0}.uniq.sort
+end 
